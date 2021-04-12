@@ -3,7 +3,7 @@
  * @Author: 小羽
  * @LastEditors: 小羽
  * @Date: 2021-04-11 23:05:22
- * @LastEditTime: 2021-04-12 23:50:09
+ * @LastEditTime: 2021-04-13 00:22:05
  */
 const gulp = require("gulp")
 const lighthouse = require('lighthouse');
@@ -11,6 +11,7 @@ const chromeLauncher = require('chrome-launcher');
 const printer = require('lighthouse/lighthouse-cli/printer');
 const Reporter = require('lighthouse/lighthouse-core/report/report-generator');
 const fs = require('fs-extra');
+const del = require("del")
 let chrome
 const taskList = require("./taskList")
 const desktopConfig = require('./lighthouse-desktop-config.js');
