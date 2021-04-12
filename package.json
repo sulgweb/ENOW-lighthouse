@@ -4,8 +4,11 @@
   "description": "ENOW大前端——lighthouse测试工具",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"gulp start"
+    "mobile":"gulp start-mobile",
+    "desktop":"gulp start-desktop",
+    "clean":"gulp clean:report",
+    "create:report-desktop":"gulp create:report-desktop",
+    "create:report-mobile":"gulp create:report-desktop"
   },
   "author": "",
   "license": "ISC",
